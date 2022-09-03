@@ -1,1 +1,9 @@
 ls - to list all of files inside of directory
+pwd - print working directory
+cd - to change current direction
+cd .. - goes up one level to previous directory
+mkdir - creates new directory 
+touch - to create a new file
+clear - to clear the terminal window
+**tab completion - can be used to finish commands, timesaving mechanism, NOT COMMAND
+
