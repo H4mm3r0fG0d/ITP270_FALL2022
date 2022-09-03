@@ -1,0 +1,1 @@
+ls - to list all of files inside of directory
