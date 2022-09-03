@@ -7,3 +7,37 @@ touch - to create a new file
 clear - to clear the terminal window
 **tab completion - can be used to finish commands, timesaving mechanism, NOT COMMAND
 
+ls -a - to see all files including hidden
+ls -l - to see all the files in larget format 
+ls -t - to see files ordered based on last modification
+ls -h - to see all files in human readable format
+cat - to see whats inside of a file
+mv - to move a file from one directory to another
+rm - to remove a file
+
+> - overwirite a file
+>> - append something to exiting file contents
+| - pipe used to combine commands and use the output of a previous command as an input for the following commands
+sort - to sort the files
+uniq - to find the unique lines or words in a file
+grep - to search for something
+grep -i - case insensitive search
+sed - to replace a word inside of a file
+
+Environment
+
+Nano - text editor
+Bash Profile
+Alias
+Environmental Variables
+env
+
+Bash Scripting
+
+Declare and create variables
+How to use conditionals
+Loops
+Input
+Alias
+
+
