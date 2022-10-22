@@ -16,11 +16,17 @@ print(Port_Scanner_Banner)
 #Adding a one second delay timer
 time.sleep(1)
 
+# List to store open ports
+ports = []
+
+# List to store discovered banners
+banners = []
+
 def scan(target):
     #Defining the scan target function
     converted_ip = convert_ip(target)
     print('\n' + 'Scanning Target : ' + str(target))
-    for port in range(21,500):
+    for port in range(21,80):
         scan_port(converted_ip, port)
 
 def convert_ip(ip):
@@ -31,9 +37,9 @@ def convert_ip(ip):
     except ValueError:
         return socket.gethostbyname(ip)
 
-def get_banner(s):
-    #Defining function that grabs any port banners and returns data received
-    return s.recv(1024)
+#def get_banner(s):
+# Defining function that grabs any port banners and returns data received
+#    return s.recv(1024)
 
 def scan_port(ipaddress, port):
     #Defining function that scans target system ports and sets the connection timeout to 0.5 to connect
@@ -42,14 +48,16 @@ def scan_port(ipaddress, port):
 #print open port >> If port is closed, pass (print nothing to terminal)
     try:
         sock = socket.socket()
-        sock.settimeout(0.5)
+        sock.settimeout(.01)
         sock.connect((ipaddress, port))
 
         try:
-            banner = get_banner(sock)
-            print('[+] Port ' + str(port) + ' is Open ' + ' : ' + str(banner.decode().strip('\n')))
+            ports.append(port)
+            banner = sock.recv(1024).decode().strip("\n").strip("\r")
+            banners.append(banner)
         except:
-            print('[+] Port ' + str(port) + ' is Open ')
+            banners.append(' ')
+        sock.close()
     except:
         pass
 
@@ -62,3 +70,12 @@ if __name__ == "__main__":
             scan(ip_address.strip(' '))
     else:
         scan(targets)
+
+with open('vulnerable_banners.txt' , 'r') as file:
+    count = 0
+    for banner in banners:
+        file.seek(0)
+        for line in file.readlines():
+            if line.strip() in banner:
+                print('[!!] VULNERABLE BANNER: "' + banner + '" ON PORT: ' + str(ports[count]))
+        count += 1
