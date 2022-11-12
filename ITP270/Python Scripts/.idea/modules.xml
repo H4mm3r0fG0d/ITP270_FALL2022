@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/PycharmProjects/PyDump/.idea/PyDump.iml" filepath="$USER_HOME$/PycharmProjects/PyDump/.idea/PyDump.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Python Scripts.iml" filepath="$PROJECT_DIR$/.idea/Python Scripts.iml" />
     </modules>
   </component>
