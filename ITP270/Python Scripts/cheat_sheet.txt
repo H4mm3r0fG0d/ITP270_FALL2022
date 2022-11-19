@@ -1,0 +1,35 @@
+# Variable
+# Arithmatic Operators
+# Logical Operators
+# If-else
+# For / While
+# String - format, count
+# List - append, pop, remove
+# Dictionary - 
+# Tuples
+# Function
+# Class - introduction
+  # Class Variable
+  # Instance Variable
+  # Constructor
+  # Representation
+  # Magic/Dunder methods
+  # Instantiate an instance
+# Try-Except
+
+
+#Bash Scripting
+  #Recon
+    #Port Scanner
+    #Advanced Port Scanner
+    #Ping Sweep
+
+#Python
+  #Keylogger
+  #Remote Keylogger
+  #Email Keylogger
+
+#Git Version Control
+  #status, add, commit, push, pull, clone, get authentication key
+
+#Repl, Cyber Range VM, CLI
