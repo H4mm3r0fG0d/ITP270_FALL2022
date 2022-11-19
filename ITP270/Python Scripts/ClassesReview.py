@@ -5,7 +5,8 @@ class Student:
         self.year = year
         self.grades = []
 
-    Student.add_grade(grade)
+    def add_grade(grade):
+        
 # Saving Student instances to variables
 roger = Student('Roger van der Weyden', 'year 10')
 sandro = Student('Sandro Botticelli', 'year 12')
