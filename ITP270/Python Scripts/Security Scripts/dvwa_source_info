@@ -1,0 +1,13 @@
+name="txtName"
+type="text"
+maxlength="10"
+
+name="mtxMessage"
+maxlength="50"
+
+name="btnSign"
+type="submit"
+value="Sign Guestbook"
+
+PHPSESSID=t641pkf0pqmi3j262q9t84j766
+security=low
