@@ -1,8 +1,4 @@
-Blah blah blah blah
-Read this if you can
-It's a test
-This ain't no drill
- *SHIFT* What it do baby, it""s the ice man paul wall
- *SHIFT* Got my  *SHIFT* Ice lookin something like a disco ballcurious geronimo was hero to neroKey.ctrlcclear
-stuff *SHIFT* _dvwa *SHIFT* _2 *BACKSPACE*  *SHIFT* ITP270Key.ctrlvdvwa *SHIFT* _sc *BACKSPACE*  *BACKSPACE* form *SHIFT* _info *BACKSPACE*  *BACKSPACE*  *BACKSPACE*  *BACKSPACE*  *BACKSPACE*  *BACKSPACE*  *BACKSPACE*  *BACKSPACE*  *BACKSPACE* source *SHIFT* _info *SHIFT* "Finished  *SHIFT* D *BACKSPACE* dvwa  *BACKSPACE*  *BACKSPACE*  *BACKSPACE*  *BACKSPACE*  *BACKSPACE*  *SHIFT* DVWA  *SHIFT* keylogger dump *SHIFT* . *SHIFT* "htop
-Key.f9Key.f9Key.downKey.upKey.downKey.downKey.downKey.downKey.downKey.downKey.downKey.downKey.downKey.downKey.downKey.downKey.downKey.downKey.downKey.f9Key.downKey.upKey.rightKey.leftKey.downKey.up
+        inet 192.168.50.128  netmask 255.255.255.0  broadcast 192.168.50.255
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet 192.168.50.128  netmask 255.255.255.0  broadcast 192.168.50.255
+        inet 127.0.0.1  netmask 255.0.0.0
